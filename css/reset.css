@@ -1,0 +1,206 @@
+/*
+*    作者：肖桃
+*    创建日期：2020-6-16 10:22:22
+*    修改日期：2020-8-04 10:22:22
+*    项目地址：http://www.baidu.com
+*    版本号：ver 1.0
+*/
+/*清空浏览器的默认样式*/
+div,p,ul,ol,li,dd,h1,h2,h3,h4,h5,h6,dt,dl,form,input,textarea,blockquote,th,td {padding: 0; margin: 0}
+h1,h2,h3,h4,h5,h6 {font-size: 16px; font-weight: 400}
+em,i  {font-style: normal }
+ul,ol {list-style: none   }
+label {cursor    : pointer}
+/* 设置网页主体的背景颜色、外间距、内间距、行高、字体大小、字体家族 */
+body  {background: #fff; margin:  0; padding: 0; line-height: 1; font-size: 14px; font-family:"Microsoft YaHei","微软雅黑","simsun",Tahoma,Arial}
+/*页面布局*/
+.wt1200 {width: 1200px; margin: 0 auto}
+.wt960 {width: 960px; margin: 0 auto}
+.w220   {width: 220px}
+.layout {width: 100%}
+/*背景颜色样式*/
+.bgblack    {background-color: #000}
+.bgwhite    {background-color: #fff}
+.bgred      {background-color: #f00}
+.bgred1      {background-color: #ff2832}
+.bgorange   {background-color: #f90}
+.bgyellow   {background-color: #ff0}
+.bggreen    {background-color: #393}
+.bgblue     {background-color: #00f}
+.bgpurple   {background-color: #808}
+.bggray     {background-color: #999}
+.bgcolor1     {background-color: #f9f9f9}
+.bgcolor2     {background-color: #f6f6f6}
+.bgcolor3     {background-color: #FAFAFA}
+.bgcolor4     {background-color: #646464}
+.bgcolor5     {background-color: #c8c8c8}
+.bgcolor5     {background-color: #5e5e5e}
+.bgcolor6     {background-color: #F6F9FB}
+.bgcolor7     {background-color: #FBF2ED}
+.bgcolor8     {background-color: #FEF8F5}
+.bgcolor9     {background-color: #F5F5F5}
+/*颜色*/
+.black    ,a.black    {color: #000}
+.white    ,a.white    {color: #fff}
+.red      ,a.red      {color: #f00}
+.red1      ,a.red1     {color: #ff2832}
+.orange   ,a.orange   {color: #f90}
+.orange1   ,a.orange1   {color: #ff572a}
+.yellow   ,a.yellow   {color: #ff0}
+.green    ,a.green    {color: #393}
+.blue     ,a.blue     {color: #00f}
+.blue1     ,a.blue1     {color: #1a66b3}
+.purple   ,a.purple   {color: #808}
+.gray     ,a.gray     {color: #999}
+.gray1     ,a.gray1     {color: #646464}
+.gray2     ,a.gray2     {color: #969696}
+.gray3     ,a.gray3     {color: #323232}
+.gray4     ,a.gray4     {color: #505050}
+.gray5     ,a.gray5     {color: #333}
+.gray6     ,a.gray6     {color: #787878}
+.gray7     ,a.gray7     {color: #666}
+/* 设置超链接的样式 */
+a       {color: #646464; text-decoration: none}
+a:hover {color: #646464; text-decoration: none}
+/*字体大小*/
+.font0  {font-size: 0   }
+.font12 {font-size: 12px}
+.font14 {font-size: 14px}
+.font16 {font-size: 16px}
+.font18 {font-size: 18px}
+.font20 {font-size: 22px}
+.font22 {font-size: 22px}
+.font24 {font-size: 24px}
+.font26 {font-size: 26px}
+.font28 {font-size: 28px}
+.font30 {font-size: 30px}
+.font32 {font-size: 32px}
+.font34 {font-size: 34px}
+.font36 {font-size: 36px}
+.font38 {font-size: 38px}
+.font40 {font-size: 40px}
+/*文本处理与对齐方式*/
+.txj {text-align: justify; color: gray}
+.tc  {text-align: center}
+.tl  {text-align: left}
+.tr  {text-align: right}
+.vam {vertical-align: middle}
+.fb  {font-weight: bold}
+/* 行高 */
+.lh16 {line-height: 16px}
+.lh18 {line-height: 18px}
+.lh20 {line-height: 20px}
+.lh22 {line-height: 22px}
+.lh24 {line-height: 24px}
+.lh26 {line-height: 26px}
+.lh28 {line-height: 28px}
+.lh30 {line-height: 30px}
+.lh32 {line-height: 32px}
+.lh34 {line-height: 34px}
+.lh36 {line-height: 36px}
+.lh38 {line-height: 38px}
+.lh40 {line-height: 40px}
+/* 鼠标样式 */
+.pointer{cursor: pointer}
+/*告诉部分浏览器不要给图片添加边框*/
+img         {border: none}
+table,th,td {border-collapse: collapse; border-spacing: 0}
+/*将超出宽度的文字截字并用省略号表示*/
+.cutFont {white-space: nowrap; text-overflow: ellipsis; overflow: hidden}
+/*浮动公共样式*/
+.fl {float: left}
+.fr {float: right}
+.cl {clear: both}
+/*清除浮动公共样式*/
+.clearfix:after {content: "\20"; display: block; height: 0; clear: both; visibility: hidden}
+.clearfix       {*zoom: 1}
+/*显示方式与定位*/
+.pore   {position: relative}
+.inline {display : inline-block}
+.block  {display : block}
+.none   {display : none}
+/* 弹性盒的绝对居中 */
+.center  {display: flex; justify-content: center; align-items: center}
+.centery {display: flex; align-items: center}
+.centerx {display: flex; justify-content: center}
+/*外间距和内间距公共样式*/
+.mt5  {margin-top: 5px }
+.mt10 {margin-top: 10px}
+.mt15 {margin-top: 15px}
+.mt20 {margin-top: 20px}
+.mt25 {margin-top: 25px}
+.mt30 {margin-top: 30px}
+.mt35 {margin-top: 35px}
+.mt40 {margin-top: 40px}
+.mt45 {margin-top: 45px}
+.mt50 {margin-top: 50px}
+.mb5  {margin-bottom: 5px }
+.mb10 {margin-bottom: 10px}
+.mb15 {margin-bottom: 15px}
+.mb20 {margin-bottom: 20px}
+.mb25 {margin-bottom: 25px}
+.mb30 {margin-bottom: 30px}
+.mb35 {margin-bottom: 35px}
+.mb40 {margin-bottom: 40px}
+.mb45 {margin-bottom: 45px}
+.mb50 {margin-bottom: 50px}
+.ml5  {margin-left: 5px }
+.ml10 {margin-left: 10px}
+.ml15 {margin-left: 15px}
+.ml20 {margin-left: 20px}
+.ml25 {margin-left: 25px}
+.ml30 {margin-left: 30px}
+.ml35 {margin-left: 35px}
+.ml40 {margin-left: 40px}
+.ml45 {margin-left: 45px}
+.ml50 {margin-left: 50px}
+.mr5  {margin-right: 5px }
+.mr10 {margin-right: 10px}
+.mr15 {margin-right: 15px}
+.mr20 {margin-right: 20px}
+.mr25 {margin-right: 25px}
+.mr30 {margin-right: 30px}
+.mr35 {margin-right: 35px}
+.mr40 {margin-right: 40px}
+.mr45 {margin-right: 45px}
+.mr50 {margin-right: 50px}
+.pt5  {padding-top: 5px }
+.pt10 {padding-top: 10px}
+.pt15 {padding-top: 15px}
+.pt20 {padding-top: 20px}
+.pt25 {padding-top: 25px}
+.pt30 {padding-top: 30px}
+.pt35 {padding-top: 35px}
+.pt40 {padding-top: 40px}
+.pt45 {padding-top: 45px}
+.pt50 {padding-top: 50px}
+.pb5  {padding-bottom: 5px }
+.pb10 {padding-bottom: 10px}
+.pb15 {padding-bottom: 15px}
+.pb20 {padding-bottom: 20px}
+.pb25 {padding-bottom: 25px}
+.pb30 {padding-bottom: 30px}
+.pb35 {padding-bottom: 35px}
+.pb40 {padding-bottom: 40px}
+.pb45 {padding-bottom: 45px}
+.pb50 {padding-bottom: 50px}
+.pl5  {padding-left: 5px }
+.pl10 {padding-left: 10px}
+.pl15 {padding-left: 15px}
+.pl20 {padding-left: 20px}
+.pl25 {padding-left: 25px}
+.pl30 {padding-left: 30px}
+.pl35 {padding-left: 35px}
+.pl40 {padding-left: 40px}
+.pl45 {padding-left: 45px}
+.pl50 {padding-left: 50px}
+.pr5  {padding-right: 5px}
+.pr10 {padding-right: 10px}
+.pr15 {padding-right: 15px}
+.pr20 {padding-right: 20px}
+.pr25 {padding-right: 25px}
+.pr30 {padding-right: 30px}
+.pr35 {padding-right: 35px}
+.pr40 {padding-right: 40px}
+.pr45 {padding-right: 45px}
+.pr50 {padding-right: 50px}

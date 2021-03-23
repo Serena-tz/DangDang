@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 - 当当网</title>
+    <!-- 引入公共样式表 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- 引入图标字体样式表 -->
+    <link rel="stylesheet" href="fa/css/all.css">
+    <!-- 设置网站的图标 -->
+    <link rel="icon" href="images/favicon.ico">
+    <!-- 引入首页的样式表 -->
+    <link rel="stylesheet" href="css/1.index.css">
+    <!-- 引入登录页样式表 -->
+    <link rel="stylesheet" href="css/4.login.css">
+    <!-- 引入登录页JS代码 -->
+    <script src="js/4.login.js" defer="defer"></script>
+</head>
+
+<body>
+    <!-- 设置头部的容器 -->
+    <div class="header-wrapper">
+        <!-- 设置头部 -->
+        <div class="header">
+            <a href="1.index.html" target="_blank" rel="noopener noreferrer">
+                <img src="images/4.login/logo.png" alt="">
+            </a>
+            <div class="improve">
+                <span class="i-icon"></span>
+                <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                    “登录页面“改进建议
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 设置主体的容器 -->
+    <div class="main-wrapper">
+        <!-- 设置主体 -->
+        <div class="main clearfix wt1200">
+            <!-- 设置主体的左边 -->
+            <div class="main-left fl">
+            </div>
+            <!-- 设置主体的右边 -->
+            <div class="main-right fr pore">
+                <!-- 设置顶部的安全提醒 -->
+                <div class="main-right-top">
+                    <div class="top-inner font12">
+                        请勿设置与邮箱及其他网站相同的登录及支付密码，
+                        <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                            谨防诈骗
+                        </a>
+                        !
+                    </div>
+                </div>
+                <!-- 设置登录的内部内容 -->
+                <div class="login-inner">
+                    <!-- 设置右上角的切换图片 -->
+                    <div class="hd-r pointer">
+                        <a class="hd-r1" href="javascript:void(0);" rel="noopener noreferrer"></a>
+                        <a class="hd-r2 none" href="javascript:void(0);" rel="noopener noreferrer"></a>
+                    </div>
+                    <!-- 设置切换图片的提示语句 -->
+                    <div class="info_remind">
+                        <div class="info">
+                            <span class="inline info-icon"></span>
+                            <span class="font12 orange1 tips">扫码登录更安全</span>
+                            <span class="font12 orange1 none tips">密码登录在这里</span>
+                            <span class="right-down"></span>
+                        </div>
+                    </div>
+                    <!-- 设置密码登录 -->
+                    <div class="login-content">
+                        <!-- 设置密码登录 -->
+                        <p class="login-head ml10">
+                            <span>密码登录</span>
+                            <span class="none">扫码登录</span>
+                        </p>
+                        <!-- 设置用户名 -->
+                        <div class="username pore mt20 ml10">
+                            <span class="span-icon icon-n"></span>
+                            <input type="text" id="usernameinput" value="">
+                            <a class="text_del none del-n" id="clearUsername" href="javascript:void(0);"></a>
+                            <span class="place username-place">
+                                邮箱/昵称/手机号码
+                            </span>
+                        </div>
+                        <!-- 设置用户名的提示 -->
+                        <p class="user-tips font12 ml10">
+                            <span class="none username_span">
+                                请输入邮箱/昵称/手机号码
+                            </span>
+                        </p>
+                        <!-- 设置密码 -->
+                        <div class="pw pore ml10">
+                            <span class="span-icon icon-p"></span>
+                            <input type="password" id="pwinput" value="">
+                            <a class="text_del none del-p" id="clearUsername" href="javascript:void(0);"></a>
+                            <span class="place pw-place">
+                                密码
+                            </span>
+                        </div>
+                        <!-- 设置用户名的提示 -->
+                        <p class="pw-tips font12 ml10">
+                            <span class="none pw_span">
+                                请填写长度为6-20个字符的密码
+                            </span>
+                        </p>
+                        <!-- 设置旋转的图片 -->
+                        <div class="J_rotateVcodeWrap ml10">
+                            <!-- 设置旋转的顶部 -->
+                            <div class="Rotate-operate">
+                                <div class="Rotate-prompt">
+                                    请点击下方图片，旋转至正确方向
+                                </div>
+                                <a class="refresh">
+                                    换一组
+                                </a>
+                            </div>
+                            <!-- 设置旋转的四个图片 -->
+                            <div class="Rotate-bgs clearfix">
+                                <div class="bg1 fl"></div>
+                                <div class="bg2 fl"></div>
+                                <div class="bg3 fl"></div>
+                                <div class="bg4 fl"></div>
+                            </div>
+                        </div>
+                        <!-- 设置勾选 -->
+                        <div class="login-check ml10 clearfix">
+                            <a class="fr font12" href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                                忘记密码？
+                            </a>
+                            <input class="vam" type="checkbox" name="" id="checkbox" checked="checked">
+                            <span class="check-text lh22 font12 none">七天内自动登录</span>
+                            <span class="check-text lh22 font12">请勿在公用电脑上勾选此选项</span>
+                        </div>
+                        <!-- 设置登录按钮 -->
+                        <p class="login-btn ml10">
+                            <a href="javascript:void(0);" rel="noopener noreferrer">登&nbsp;录</a>
+                        </p>
+                        <!-- 设置注册 -->
+                        <p class="register-p ml10 font12">
+                            <a class="register-btn" href="5.register.html" target="_blank" rel="noopener noreferrer">
+                                立即注册
+                            </a>
+                            <span class="register-span mr50">
+                                使用合作网站登录
+                            </span>
+                            <a class="register-zc" href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                                《隐私政策》
+                            </a>
+                        </p>
+                        <!-- 设置最底下的小图标 -->
+                        <ul class="icon-ul ml10">
+                            <li class="fl mr5">
+                                <a class="icon-a1 icon-a" href="6.empty.html" target="_blank"
+                                    rel="noopener noreferrer"></a>
+                            </li>
+                            <li class="fl mr5">
+                                <a class="icon-a2 icon-a" href="6.empty.html" target="_blank"
+                                    rel="noopener noreferrer"></a>
+                            </li>
+                            <li class="fl mr5">
+                                <a class="icon-a3 icon-a" href="6.empty.html" target="_blank"
+                                    rel="noopener noreferrer"></a>
+                            </li>
+                            <li class="fl mr5">
+                                <a class="icon-a4 icon-a" href="6.empty.html" target="_blank"
+                                    rel="noopener noreferrer"></a>
+                            </li>
+                            <li class="fl mr5 pore pointer" id="more">
+                                <a class="gray2 font12 more inline vam" href="javascript:void(0)"
+                                    rel="noopener noreferrer">
+                                    更多
+                                </a>
+                                <!-- 设置更多的下拉按钮 -->
+                                <span class="more-arrow inline vam ml5 mt5">
+                                </span>
+                                <ul class="share-more clearfix font12 none">
+                                    <li class="more-up">
+
+                                    </li>
+                                    <li class="baidu fl">
+                                        <a class="gray4" href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                                            百度
+                                        </a>
+                                    </li>
+                                    <li class="renren fl ml20">
+                                        <a class="gray4" href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                                            人人网
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 设置扫码登录 -->
+                    <div class="login-content none login-content2">
+                        <!-- 设置密码登录 -->
+                        <p class="login-head ml10">
+                            <span class="none">密码登录</span>
+                            <span>扫码登录</span>
+                        </p>
+                        <div class="scan_process pore">
+                            <!-- 设置二维码 -->
+                            <div class="two_code pore">
+                                <!-- 设置二维码 -->
+                                <div class="pic_code">
+                                    <img src="images/4.login/get_qrcode.png" alt="">
+                                </div>
+                                <!-- 设置手机模型 -->
+                                <div class="tel_pic none">
+                                </div>
+                                <!-- 假如扫描错误 -->
+                                <div class="scan_false pore none">
+                                    <div class="panel">
+                                    </div>
+                                    <!-- 设置错误提示 -->
+                                    <div class="false_remind">
+                                        <p>二维码已失效</p>
+                                        <a href="javascript:void(0);" class="refresh">请点击刷新</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 设置二维码提示 -->
+                            <div class="tel_remind">
+                                <!-- 设置提示信息 -->
+                                <div class="information">
+                                    打开
+                                    <a class="red1 mr15" href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                                        手机当当
+                                    </a>
+                                    扫一扫登录
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 设置尾部的容器 -->
+    <div class="footer-wrapper mt15" id="login">
+        <!-- 设置尾部 -->
+        <div class="footer">
+            <!-- 设置底部的版权信息等 -->
+            <div class="footer-copy">
+                <div class="footer-nav mt25">
+                    <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                        公司简介
+                    </a><span>|</span>
+                    <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                        诚聘英才
+                    </a><span>|</span>
+                    <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                        网站联盟
+                    </a><span>|</span>
+                    <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                        当当招商
+                    </a><span>|</span>
+                    <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                        机构销售
+                    </a><span>|</span>
+                    <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                        手机当当
+                    </a><span>|</span>
+                    <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                        官方Blog
+                    </a><span>|</span>
+                    <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                        知识产权
+                    </a> <span>|</span>
+                    <div class="footer-hot-search inline pore">
+                        <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                            热词搜索
+                        </a>
+                        <div class="hot-search-box font12 none pore pl15 pr15">
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">A</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">B</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">C</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">D</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">E</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">F</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">G</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">H</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">I</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">J</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">K</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">L</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">M</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">O</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">P</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">Q</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">R</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">S</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">T</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">U</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">V</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">W</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">X</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">Y</a>
+                            <a href="6.empty.html" target="_blank" rel="noopener noreferrer">Z</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright tc mt10">
+                    <span>
+                        Copyright © 2004 - 2020 当当网. All Rights Reserved
+                    </span>
+                </div>
+                <div class="footer-copyright tc lh20 pt10">
+                    <span>京ICP证041189号</span>
+                    <span class="span">|</span>
+                    <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                        出版物经营许可证 新出发京批字第直0673号
+                    </a>
+                    <span class="span">|</span>
+                    <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                        食品经营许可证：JY11101050363440
+                    </a>
+                    <br>
+                    <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                        京ICP备17043473号
+                    </a>
+                    <span class="span">|</span>
+                    <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                        <img class="vam" src="images/1.index/gong.png" alt="">
+                        <span>
+                            京公网安备11010502037644号
+                        </span>
+                    </a>
+                    <span class="span">|</span>
+                    <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                        经营许可证编号：合字B2-20160011
+                    </a>
+                    <span class="span">|</span>
+                    <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                        互联网药品信息服务资格证
+                    </a>
+                    <br>
+                    <span>互联网违法和不良信息举报电话：4001066666-5 邮箱：</span>
+                    <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                        service@cs.dangdang.com
+                    </a>
+                    <br>
+                    <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                        网络出版服务许可证（署）网出证（京）字第117号
+                    </a>
+                    <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                        北京当当科文电子商务有限公司
+                    </a>
+                    <span>，通信地址：北京市朝阳区北三环东路8号静安中心</span>
+                </div>
+                <!-- 设置底部的四个图标 -->
+                <div class="footer-bottom-icon pt10 clearfix">
+                    <div class="icondiv fl inline">
+                        <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                            <img src="images/1.index/bottoom-icon1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="icondiv fl inline">
+                        <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                            <img src="images/1.index/bottoom-icon2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="icondiv fl inline">
+                        <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                            <img src="images/1.index/bottoom-icon3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="icondiv fl inline">
+                        <a href="6.empty.html" target="_blank" rel="noopener noreferrer">
+                            <img src="images/1.index/bottoom-icon4.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 设置遮罩层 -->
+    <div class="masks-wrapper">
+        <div class="masks">
+        </div>
+        <div class="pop_cheat pore">
+            <h3 class="fb">安全提醒</h3>
+            <div class="pop_cheat_info clearfix">
+                <div>
+                    <span class="right">当当平台及销售商<b
+                            class="fb">不会以任何理由，要求您点击任何网址链接进行退款或支付操作。</b>当当客服电话400-106-6666，0527-80878888。</span>
+                </div>
+            </div>
+            <div class="pop_cheat_btn centerx">
+                <a class="white" href="javascript:void(0);">
+                    知道了
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
